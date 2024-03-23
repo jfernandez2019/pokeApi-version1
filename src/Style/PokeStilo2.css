@@ -1,0 +1,118 @@
+/* PokeStilo.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Estilos para el formulario */
+  .info-poke{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+  }
+
+  .PokedexForm {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+  }
+  
+  .container-imagen {
+    text-align: center;
+  }
+  
+  .titulo {
+    width: 300px;
+    height: auto;
+  }
+  
+  .pokemones {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    flex: 1 1 30%; /* Toma un 30% del ancho del contenedor */
+  }
+  
+  .pokemon-list div {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .pokemon-list div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botones de navegación */
+
+  .btn {
+    background-color: #ff4d00;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e64000;
+  }
+  
+  /* Detalles del Pokémon */
+  .pokemon-details {
+    margin-top: 30px;
+    text-align: center;
+    flex: 1; /* Hace que este elemento ocupe el espacio disponible */
+  }
+  
+  .pokemon-details h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .pokemon-details img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pokemon-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pokemon-details ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666;
+  }
+
+  
